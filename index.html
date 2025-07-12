@@ -7,7 +7,7 @@
    <style>
     #gallery-container {
       text-align: center;
-      margin-top: 50px;
+      margin-top: 200px;
     }
     #gallery-image {
       width: 400px;
@@ -17,11 +17,26 @@
       border-radius: 10px;
     }
     button {
-      padding: 10px 20px;
       margin: 20px;
-      font-size: 16px;
-      cursor: pointer;
+      font-size: 16px; 
     }
+  button {
+  padding: 10px 20px;
+  border: none;
+  background: #a77428;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+p{
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: -100px;
+}
   </style>
 </head>
 <body>
@@ -31,13 +46,14 @@
       <ul id="content">
         <li>Home</li>
         <li>About</li>
-        <li>Experiance</li>
         <li>Project</li>
         <li>Contect Us</li>
+        <li id="login-button" onclick="logIn()">Login/SiginUp</li>
       </ul>
     </nav>
-  </div>
-  <p>Hello</p>
+    </div>
+  <p>Home Page</p>
+
   <div id="gallery-container">
     <img id="gallery-image"src="" alt="Gallery Image">
     <div>

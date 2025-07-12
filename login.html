@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login/SignUp</title>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <button onclick="goHome()">Home</button>
+        <h2>Sign Up</h2>
+        <input id="signup-name" type="text" placeholder="name">
+        <input id="signup-email"type="email" placeholder="email">
+        <input id="signup-password" type="password" placeholder="password">
+        <button onclick="signUp()">SignUP</button>
+
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="email">
+        <input type="password" id="login-password" placeholder="password">
+        <button onclick="logIn()">Login</button>
+
+        <h3 id="user-info"></h3>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

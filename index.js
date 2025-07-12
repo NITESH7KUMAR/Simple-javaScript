@@ -49,4 +49,8 @@ for(let items of liItems){
 
 }
 
+function logIn(){
+  window.location.href="login.html";
+}
+
 navbarFunction();
