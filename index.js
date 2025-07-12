@@ -49,8 +49,18 @@ for(let items of liItems){
 
 }
 
-function logIn(){
-  window.location.href="login.html";
+
+function about(){
+  window.location.href="about.html";
+}
+function project(){
+  window.location.href="project.html";
+}
+function contact(){
+  window.location.href="contact.html";
 }
 
+function logIn(){
+  window.location.href="login.html"
+}
 navbarFunction();
